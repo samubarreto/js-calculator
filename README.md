@@ -1,6 +1,6 @@
 # [JS-Calculator](https://samubarreto.github.io/js-calculator/)
-+ Calculadora web com dark/light mode, feita em HTML, CSS e JavaScript, usando eval(). Armazena cálculos no localStorage.
-+ Web calculator with dark/light mode, made with HTML, CSS, and JavaScript, using eval(). Stores calculations in localStorage.
++ Calculadora web com dark/light mode (EM PROGRESSO) feita em HTML, CSS e JavaScript, usando eval(). Armazena cálculos no localStorage.
++ Web calculator with dark/light mode (WIP) made with HTML, CSS, and JavaScript, using eval(). Stores calculations in localStorage.
 
 # [Web Preview (Click here)](https://samubarreto.github.io/js-calculator/) 👀
 ![image](https://github.com/samubarreto/js-calculator/assets/70921394/11d6eb69-0c2b-4612-b8b6-de04cc8138c9)
