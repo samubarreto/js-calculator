@@ -70,8 +70,12 @@ p {
 }
 
 .github-icon,
-.change-theme {
-  margin: 10px 0px;
+.change-theme-light,
+.change-theme-dark {
+  cursor: pointer;
+  border: none;
+  min-width: 35vh;
+  margin: 10px 0px 0px 0px;
   padding: 5px 0px;
   color: #323333;
   font-family: Roboto, Arial;
@@ -117,4 +121,12 @@ p {
 .github-icon:hover,
 .change-theme:hover {
   opacity: 0.8;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
 }
