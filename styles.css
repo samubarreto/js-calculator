@@ -36,6 +36,25 @@ p {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.number:hover,
+.dot:hover,
+.special:hover,
+.equal:hover {
+  opacity: 0.8;
+}
+
+.number:active,
+.dot:active,
+.special:active,
+.equal:active {
+  opacity: 0.5;
+}
+
+p {
+  margin: 0px 0px 15px 0px;
 }
 
 .special,
@@ -45,4 +64,23 @@ p {
 
 .double-column {
   grid-column-end: span 2;
+}
+
+.github-icon {
+  margin: 10px 0px;
+  padding: 5px 0px;
+  color: #323333;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.github-icon:hover {
+  opacity: 0.8;
 }
