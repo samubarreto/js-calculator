@@ -51,6 +51,7 @@ p {
 .dot:active,
 .special:active,
 .equal:active {
+  appearance: none;
   opacity: 0.5;
 }
 
@@ -91,8 +92,14 @@ p {
 }
 
 .github-icon:hover,
-.change-theme:hover {
-  opacity: 0.8;
+.change-theme-light:hover {
+  opacity: 0.85;
+}
+
+.github-icon:active,
+.change-theme:active {
+  appearance: none;
+  opacity: 0.4;
 }
 
 .change-theme-light {
@@ -116,11 +123,6 @@ p {
   cursor: pointer;
   color: rgb(239, 239, 239);
   background-color: #323333;
-}
-
-.github-icon:hover,
-.change-theme:hover {
-  opacity: 0.8;
 }
 
 .others {
