@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+  border: #323333 solid 3.5px;
+  border-radius: 40px;
+  padding: 20px;
+  background: transparent;
+}
+
+.numbers-operators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7px;
+}
+
+.number,
+.dot,
+.special,
+.equal,
+p {
+  color: rgb(239, 239, 239);
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  background-color: #323333;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.special,
+.equal {
+  background-color: #e69223;
+}
+
+.double-column {
+  grid-column-end: span 2;
+}

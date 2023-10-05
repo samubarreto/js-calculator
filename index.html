@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="main-container">
+      <section class="result">
+        <p class="js-calculus"></p>
+      </section>
+
+      <section class="numbers-operators">
+        <button onclick="calcular('C')" class="special">C</button>
+        <button onclick="calcular(' ( ')" class="special">(</button>
+        <button onclick="calcular(' ) ')" class="special">)</button>
+        <button onclick="calcular(' / ')" class="special">/</button>
+
+        <button onclick="calcular('7')" class="number">7</button>
+        <button onclick="calcular('8')" class="number">8</button>
+        <button onclick="calcular('9')" class="number">9</button>
+        <button onclick="calcular(' * ')" class="special">*</button>
+
+        <button onclick="calcular('4')" class="number">4</button>
+        <button onclick="calcular('5')" class="number">5</button>
+        <button onclick="calcular('6')" class="number">6</button>
+        <button onclick="calcular(' - ')" class="special">-</button>
+
+        <button onclick="calcular('1')" class="number">1</button>
+        <button onclick="calcular('2')" class="number">2</button>
+        <button onclick="calcular('3')" class="number">3</button>
+        <button onclick="calcular(' + ')" class="special">+</button>
+
+        <button onclick="calcular('0')" class="number double-column" style="padding: 16px 42px;">0</button>
+        <button onclick="calcular('.')" class="dot">.</button>
+        <button onclick="calcular(' = ')" class="equal">=</button>
+      </section>
+    </div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
