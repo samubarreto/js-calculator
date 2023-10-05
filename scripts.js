@@ -28,14 +28,14 @@ function alterarTema() {
         tema = 'DARK'
 
         botaoTema.classList.add('change-theme-dark')
-        botaoTema.innerHTML = (`<img src="light-theme-icon.png" alt="theme-icon" style="height:20px; margin: 0px 5px;" class="theme-icon js-theme-icon">
+        botaoTema.innerHTML = (`<img src="light-theme-icon.png" alt="light-theme-icon" style="height:20px; margin: 0px 5px;" class="theme-icon js-theme-icon">
         Change to light mode`)
 
     } else {
         tema = 'LIGHT'
 
         botaoTema.classList.remove('change-theme-dark')
-        botaoTema.innerHTML = (`<img src="light-theme-icon.png" alt="theme-icon" style="height:20px; margin: 0px 5px;" class="theme-icon js-theme-icon">
+        botaoTema.innerHTML = (`<img src="dark-theme-icon.png" alt="dark-theme-icon" style="height:20px; margin: 0px 5px;" class="theme-icon js-theme-icon">
         Change to dark mode`)
 
     }
