@@ -29,11 +29,11 @@ function alterarTema() {
 
         botaoTema.classList.add('change-theme-dark')
         botaoTema.innerHTML = (`<img src="theme-icon-sun.png" alt="light-theme-icon" style="height:17px; margin: 0px 10px;" class="theme-icon js-theme-icon">
-        Change to light mode`) } else {
+        Change to light mode (WIP)`) } else {
         tema = 'LIGHT'
 
         botaoTema.classList.remove('change-theme-dark')
         botaoTema.innerHTML = (`<img src="theme-icon-moon.png" alt="dark-theme-icon" style="height:17px; margin: 0px 10px; opacity: 0.85;" class="theme-icon js-theme-icon">
-        Change to dark mode`)
+        Change to dark mode (WIP)`)
     }
 };
