@@ -9,37 +9,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyTheme1 js-body-theme">
   <main>
-    <div class="main-container">
+    <div class="main-container1 js-main-container">
       <section class="result">
-        <p class="js-calculus"></p>
+        <p class="js-calculus calculus1"></p>
       </section>
 
       <section class="numbers-operators">
-        <button onclick="calcular('C')" class="special">C</button>
-        <button onclick="calcular(' ( ')" class="special">(</button>
-        <button onclick="calcular(' ) ')" class="special">)</button>
-        <button onclick="calcular(' / ')" class="special">/</button>
+        <button onclick="calcular('C')" class="special1 special js-C-button">C</button>
+        <button onclick="calcular(' ( ')" class="special1 special js-P1-button">(</button>
+        <button onclick="calcular(' ) ')" class="special1 special js-P2-button">)</button>
+        <button onclick="calcular(' / ')" class="special1 special js-divide-button">/</button>
 
-        <button onclick="calcular('7')" class="number">7</button>
-        <button onclick="calcular('8')" class="number">8</button>
-        <button onclick="calcular('9')" class="number">9</button>
-        <button onclick="calcular(' * ')" class="special">*</button>
+        <button onclick="calcular('7')" class="number1 number">7</button>
+        <button onclick="calcular('8')" class="number1 number">8</button>
+        <button onclick="calcular('9')" class="number1 number">9</button>
+        <button onclick="calcular(' * ')" class="special1 special js-mult-button">*</button>
 
-        <button onclick="calcular('4')" class="number">4</button>
-        <button onclick="calcular('5')" class="number">5</button>
-        <button onclick="calcular('6')" class="number">6</button>
-        <button onclick="calcular(' - ')" class="special">-</button>
+        <button onclick="calcular('4')" class="number1 number">4</button>
+        <button onclick="calcular('5')" class="number1 number">5</button>
+        <button onclick="calcular('6')" class="number1 number">6</button>
+        <button onclick="calcular(' - ')" class="special1 special js-menos-button">-</button>
 
-        <button onclick="calcular('1')" class="number">1</button>
-        <button onclick="calcular('2')" class="number">2</button>
-        <button onclick="calcular('3')" class="number">3</button>
-        <button onclick="calcular(' + ')" class="special">+</button>
+        <button onclick="calcular('1')" class="number1 number">1</button>
+        <button onclick="calcular('2')" class="number1 number">2</button>
+        <button onclick="calcular('3')" class="number1 number">3</button>
+        <button onclick="calcular(' + ')" class="special1 special js-mais-button">+</button>
 
-        <button onclick="calcular('0')" class="number double-column" style="padding: 16px 42px;">0</button>
-        <button onclick="calcular('.')" class="dot">.</button>
-        <button onclick="calcular(' = ')" class="equal">=</button>
+        <button onclick="calcular('0')" class="number number1 double-column" style="padding: 16px 42px;">0</button>
+        <button onclick="calcular('.')" class="dot1 dot js-dot-button">.</button>
+        <button onclick="calcular(' = ')" class="special1 equal js-equal-button">=</button>
       </section>
     </div>
     <div class="others">
@@ -51,7 +51,7 @@
       </a>
       <button class="change-theme-light js-change-theme" onclick="alterarTema()">
         <img src="theme-icon-moon.png" alt="dark-theme-icon" style="height:17px; margin: 0px 10px; opacity: 0.85;" class="theme-icon js-theme-icon">
-        Change to dark mode (WIP)
+        Change to dark mode
       </button>
     </div>
   </main>
