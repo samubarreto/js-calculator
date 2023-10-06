@@ -4,7 +4,8 @@
 
 # [Web Preview (Click here)](https://samubarreto.github.io/js-calculator/) 👀
 
-![image](https://github.com/samubarreto/js-calculator/assets/70921394/11d6eb69-0c2b-4612-b8b6-de04cc8138c9)
+![image](https://github.com/samubarreto/js-calculator/assets/70921394/edebf315-3b72-49d1-a2e9-a74d2942142d)
+![image](https://github.com/samubarreto/js-calculator/assets/70921394/bb80dcca-636e-442b-b9d0-c424a9369530)
 
 # [Contato](https://linktr.ee/sampereirabrt) 📧
 [![Linktree](https://img.shields.io/badge/linktree-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/sampereirabrt)
