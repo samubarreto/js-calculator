@@ -1,6 +1,7 @@
-// let cálculoElement = document.querySelector('.js-calculus');
-// cálculoElement.innerHTML = localStorage.getItem('cálculo') || '';
+cálculoElement = document.querySelector('.js-calculus');
+cálculoElement.innerHTML = 'Hello World!';
 let cálculo = '';
+let verificador = false;
 var tema = localStorage.getItem('tema') || 'LIGHT';
 
 const botaoTema = document.querySelector('.js-change-theme');
@@ -71,15 +72,24 @@ function alterarTema() {
 
 function calcular(dígito) {
     if (dígito === ' = ') {
+        if (!verificador) {
+            cálculoElement.innerHTML = '';
+            verificador = true
+        }
         // localStorage.setItem('cálculo', cálculo);
         cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
     
     } else if (dígito === 'C') {
         cálculo = '';
+        verificador = false
         // localStorage.removeItem('cálculo');
-        cálculoElement.innerHTML = '';
+        cálculoElement.innerHTML = 'Hello World!';
     
     } else {
+        if (!verificador) {
+            cálculoElement.innerHTML = '';
+            verificador = true
+        }
         cálculo += dígito;
         // localStorage.setItem('cálculo', cálculo);
         cálculoElement.innerHTML += dígito;
