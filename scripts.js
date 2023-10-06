@@ -25,7 +25,7 @@ if (tema === 'DARK') {
 
 function alterarTema() {
     if (tema === 'LIGHT') {
-        console.log('Switching to DARK theme');
+        // console.log('Switching to DARK theme');
         tema = 'DARK'
         localStorage.setItem('tema', 'DARK');
 
@@ -46,7 +46,7 @@ function alterarTema() {
         botaoC.classList.add('special2');
 
     } else {
-        console.log('Switching to LIGHT theme');
+        // console.log('Switching to LIGHT theme');
         tema = 'LIGHT'
         localStorage.setItem('tema', 'LIGHT');
 
@@ -66,7 +66,7 @@ function alterarTema() {
         botaoMais.classList.remove('special2');
         botaoC.classList.remove('special2');
     }
-    console.log('Current Theme:', tema);
+    // console.log('Current Theme:', tema);
 };
 
 function calcular(dígito) {
