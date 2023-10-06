@@ -1,6 +1,6 @@
-// let cálculo = localStorage.getItem('cálculo') || '';
 // let cálculoElement = document.querySelector('.js-calculus');
-cálculoElement.innerHTML = localStorage.getItem('cálculo') || '';
+// cálculoElement.innerHTML = localStorage.getItem('cálculo') || '';
+let cálculo = '';
 var tema = localStorage.getItem('tema') || 'LIGHT';
 
 const botaoTema = document.querySelector('.js-change-theme');
