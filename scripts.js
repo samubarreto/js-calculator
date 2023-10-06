@@ -93,5 +93,47 @@ function calcular(dígito) {
         cálculo += dígito;
         // localStorage.setItem('cálculo', cálculo);
         cálculoElement.innerHTML += dígito;
-        }
-    }   
+    }
+}   
+
+function detectKeydownEnter(event) {
+    if (event.key === '0') {
+        calcular('0');
+    } else if (event.key === '1') {
+        calcular('1');
+    } else if (event.key === '2') {
+        calcular('2');
+    } else if (event.key === '3') {
+        calcular('3');
+    } else if (event.key === '4') {
+        calcular('4');
+    } else if (event.key === '5') {
+        calcular('5');
+    } else if (event.key === '6') {
+        calcular('6');
+    } else if (event.key === '7') {
+        calcular('7');
+    } else if (event.key === '8') {
+        calcular('8');
+    } else if (event.key === '9') {
+        calcular('9');
+    } else if (event.key === '=') {
+        calcular(' = ');
+    } else if (event.key === 'c' || event.key === 'C') {
+        calcular('C');
+    } else if (event.key === '+') {
+        calcular(' + ');
+    } else if (event.key === '-') {
+        calcular(' - ');
+    } else if (event.key === '/') {
+        calcular(' / ');
+    } else if (event.key === '*') {
+        calcular(' * ');
+    } else if (event.key === '.') {
+        calcular(' . ');
+    } else if (event.key === '(') {
+        calcular(' ( ');
+    } else if (event.key === ')') {
+        calcular(' ) ');
+    }
+}    
