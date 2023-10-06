@@ -1,24 +1,7 @@
 let cálculo = localStorage.getItem('cálculo') || '';
 let cálculoElement = document.querySelector('.js-calculus');
 cálculoElement.innerHTML = localStorage.getItem('cálculo') || '';
-var tema = 'LIGHT'
-
-function calcular(dígito) {
-if (dígito === ' = ') {
-    localStorage.setItem('cálculo', cálculo);
-    cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
-
-} else if (dígito === 'C') {
-    cálculo = '';
-    localStorage.removeItem('cálculo');
-    cálculoElement.innerHTML = '';
-
-} else {
-    cálculo += dígito;
-    localStorage.setItem('cálculo', cálculo);
-    cálculoElement.innerHTML += dígito;
-    }
-}
+var tema = localStorage.getItem('tema') || 'LIGHT';
 
 const botaoTema = document.querySelector('.js-change-theme');
 const themeIcon = document.querySelector('.js-theme-icon');
@@ -31,13 +14,20 @@ const botaoC = document.querySelector('.js-C-button');
 const botaoParênteses1 = document.querySelector('.js-P1-button');
 const botaoParênteses2 = document.querySelector('.js-P2-button');
 const botaoDivide = document.querySelector('.js-divide-button');
-const botaoMultiplica = document.querySelector('.js-mult-button')
-const botaoMenos = document.querySelector('.js-menos-button')
-const botaoMais = document.querySelector('.js-mais-button')
+const botaoMultiplica = document.querySelector('.js-mult-button');
+const botaoMenos = document.querySelector('.js-menos-button');
+const botaoMais = document.querySelector('.js-mais-button');
+
+if (tema === 'DARK') {
+    tema = 'LIGHT'
+    alterarTema();
+}
 
 function alterarTema() {
     if (tema === 'LIGHT') {
+        console.log('Switching to DARK theme');
         tema = 'DARK'
+        localStorage.setItem('tema', 'DARK');
 
         botaoTema.classList.add('change-theme-dark')
         botaoTema.innerHTML = (`<img src="theme-icon-sun.png" alt="light-theme-icon" style="height:17px; margin: 0px 10px;" class="theme-icon js-theme-icon">
@@ -56,7 +46,9 @@ function alterarTema() {
         botaoC.classList.add('special2');
 
     } else {
+        console.log('Switching to LIGHT theme');
         tema = 'LIGHT'
+        localStorage.setItem('tema', 'LIGHT');
 
         botaoTema.classList.remove('change-theme-dark')
         botaoTema.innerHTML = (`<img src="theme-icon-moon.png" alt="dark-theme-icon" style="height:17px; margin: 0px 10px; opacity: 0.85;" class="theme-icon js-theme-icon">
@@ -74,4 +66,22 @@ function alterarTema() {
         botaoMais.classList.remove('special2');
         botaoC.classList.remove('special2');
     }
+    console.log('Current Theme:', tema);
 };
+
+function calcular(dígito) {
+    if (dígito === ' = ') {
+        localStorage.setItem('cálculo', cálculo);
+        cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
+    
+    } else if (dígito === 'C') {
+        cálculo = '';
+        localStorage.removeItem('cálculo');
+        cálculoElement.innerHTML = '';
+    
+    } else {
+        cálculo += dígito;
+        localStorage.setItem('cálculo', cálculo);
+        cálculoElement.innerHTML += dígito;
+        }
+    }   
