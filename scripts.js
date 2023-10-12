@@ -130,7 +130,7 @@ function detectKeydownEnter(event) {
     } else if (event.key === '*') {
         calcular(' * ');
     } else if (event.key === '.') {
-        calcular(' . ');
+        calcular('.');
     } else if (event.key === '(') {
         calcular(' ( ');
     } else if (event.key === ')') {
