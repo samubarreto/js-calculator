@@ -121,7 +121,7 @@ function detectKeydownEnter(event) {
         calcular('8');
     } else if (event.key === '9') {
         calcular('9');
-    } else if (event.key === '=') {
+    } else if (event.key === '=' || event.key === 'enter') {
         calcular(' = ');
     } else if (event.key === 'c' || event.key === 'C') {
         calcular('C');
