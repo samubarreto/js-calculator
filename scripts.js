@@ -77,7 +77,11 @@ function calcular(dígito) {
             verificador = true
         }
         // localStorage.setItem('cálculo', cálculo);
-        cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
+        try {
+            cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
+        } catch (error) {
+            cálculoElement.innerHTML += ` = (ERRO)`;
+        }
     
     } else if (dígito === 'C') {
         cálculo = '';
