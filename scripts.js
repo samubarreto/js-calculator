@@ -80,7 +80,7 @@ function calcular(dígito) {
         try {
             cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
         } catch (error) {
-            cálculoElement.innerHTML += ` = (ERRO)`;
+            cálculoElement.innerHTML += ` = ERRO`;
         }
     
     } else if (dígito === 'C') {
