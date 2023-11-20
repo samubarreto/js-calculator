@@ -23,7 +23,7 @@
   [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
   ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)<br>
   
-  ## [📁 Meu Portfólio](https://github.com/samubarreto/Portfolio)
-  [Em construção 🔨](https://samubarreto.github.io/Portfolio/) <br>
+  # [Meu Portfolio (Clique Aqui ↗️)](https://samubarreto.github.io/Portfolio/)
+  ![image](https://github.com/samubarreto/Portfolio/assets/70921394/6c451ae4-83d0-4f46-8fac-c9d4e18bdae2)
 
 </div>
