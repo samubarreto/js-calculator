@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: #ffe259;
   background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
   background: linear-gradient(to right, #ffa751, #ffe259);
@@ -49,6 +49,12 @@
   transition: all 0.2s;
 }
 
+.calculus1 {
+  margin: 0px 0px 15px 0px;
+  padding: 25px 20px;
+  min-height: 19px;
+}
+
 .number:hover,
 .dot:hover,
 .special:hover,
@@ -63,12 +69,6 @@
 .equal:active {
   appearance: none;
   opacity: 0.5;
-}
-
-.calculus1 {
-  margin: 0px 0px 15px 0px;
-  padding: 25px 20px;
-  min-height: 19px;
 }
 
 .special1,
