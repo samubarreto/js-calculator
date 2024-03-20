@@ -20,6 +20,9 @@ body {
 }
 
 .main-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 240px;
   max-width: 240px;
   border: none;
