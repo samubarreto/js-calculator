@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100dvh;
   background: #ffe259;
   background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
@@ -24,8 +25,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 240px;
-  max-width: 240px;
+  min-width: 220px;
+  max-width: 220px;
   border: none;
   border-radius: 40px;
   padding: 20px;
