@@ -20,6 +20,7 @@ body {
 }
 
 .main-container1 {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +57,12 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+.result {
+  min-width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .calculus1 {
