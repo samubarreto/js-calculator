@@ -108,9 +108,10 @@ body {
 .github-icon,
 .change-theme-light,
 .change-theme-dark {
+  min-width: 250px;
+  max-width: 250px;
   cursor: pointer;
   border: none;
-  min-width: 35vh;
   margin: 0px 0px 0px 0px;
   padding: 5px 0px;
   color: #323333;
