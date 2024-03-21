@@ -32,8 +32,8 @@ function alterarTema() {
 
         botaoTema.classList.add('change-theme-dark')
         botaoTema.innerHTML = (`<img src="theme-icon-sun.png" alt="light-theme-icon" style="height:17px; margin: 0px 10px;" class="theme-icon js-theme-icon">
-        Change to light mode`) 
-        
+        Change to light mode`)
+
         bgColor.classList.add('bodyTheme2');
         mainContainer.classList.add('main-container2');
 
@@ -69,36 +69,48 @@ function alterarTema() {
     }
     // console.log('Current Theme:', tema);
 };
-
+// limpar calculoElement quando digitar após =
 function calcular(dígito) {
-    if (dígito === ' = ') {
-        if (!verificador) {
-            cálculoElement.innerHTML = '';
-            verificador = true
-        }
-        // localStorage.setItem('cálculo', cálculo);
-        try {
-            cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
-        } catch (error) {
-            cálculoElement.innerHTML += ` = ERRO`;
-        }
-    
-    } else if (dígito === 'C') {
+    if (dígito === 'C') {
         cálculo = '';
         verificador = false
         // localStorage.removeItem('cálculo');
         cálculoElement.innerHTML = 'Hello World!';
-    
+    } else if (cálculoElement.innerHTML.length > 65) {
+        cálculoElement.innerHTML = cálculo + ' [LIMITE-ATINGIDO]'
     } else {
-        if (!verificador) {
-            cálculoElement.innerHTML = '';
-            verificador = true
+        if (dígito === ' = ') {
+            if (!verificador) {
+                cálculoElement.innerHTML = '';
+                verificador = true
+            }
+            if (cálculoElement.innerHTML.includes('=')) {
+                cálculo = '';
+                cálculoElement.innerHTML = '';
+            } else {
+                // localStorage.setItem('cálculo', cálculo);
+                try {
+                    cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
+                } catch (error) {
+                    cálculoElement.innerHTML += ` = ERRO`;
+                }
+            }
+
+        } else {
+            if (!verificador) {
+                cálculoElement.innerHTML = '';
+                verificador = true
+            }
+            if (cálculoElement.innerHTML.includes('=')) {
+                cálculo = '';
+                cálculoElement.innerHTML = '';
+            }
+            cálculo += dígito;
+            // localStorage.setItem('cálculo', cálculo);
+            cálculoElement.innerHTML += dígito;
         }
-        cálculo += dígito;
-        // localStorage.setItem('cálculo', cálculo);
-        cálculoElement.innerHTML += dígito;
     }
-}   
+}
 
 function detectKeydownEnter(event) {
     if (event.key === '0') {
