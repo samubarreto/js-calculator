@@ -1,5 +1,6 @@
-cálculoElement = document.querySelector('.js-calculus');
+let cálculoElement = document.querySelector('.js-calculus');
 cálculoElement.innerHTML = 'Hello World!';
+let tamanhoRes = cálculoElement.innerHTML.length;
 let cálculo = '';
 let verificador = false;
 var tema = localStorage.getItem('tema') || 'LIGHT';
@@ -74,7 +75,6 @@ function calcular(dígito) {
     if (dígito === 'C') {
         cálculo = '';
         verificador = false
-        // localStorage.removeItem('cálculo');
         cálculoElement.innerHTML = 'Hello World!';
     } else if (cálculoElement.innerHTML.length > 65) {
         cálculoElement.innerHTML = cálculo + ' [LIMITE-ATINGIDO]'
@@ -88,28 +88,33 @@ function calcular(dígito) {
                 cálculo = '';
                 cálculoElement.innerHTML = '';
             } else {
-                // localStorage.setItem('cálculo', cálculo);
                 try {
                     cálculoElement.innerHTML += ` = ${eval(cálculo)}`;
                 } catch (error) {
                     cálculoElement.innerHTML += ` = ERRO`;
                 }
             }
-
         } else {
             if (!verificador) {
                 cálculoElement.innerHTML = '';
                 verificador = true
             }
             if (cálculoElement.innerHTML.includes('=')) {
-                cálculo = '';
-                cálculoElement.innerHTML = '';
+                // ex: 10 + 10 = 20, se depois disso ele colocar - + * / vai puxar o 20 e ficar 20 + por exemplo
+
+                if ([' * ', ' / ', ' + ', ' - '].includes(dígito)) {
+                    cálculoElement.innerHTML = `${eval(cálculo)}`;
+                } else {
+                    cálculo = '';
+                    cálculoElement.innerHTML = '';
+                }
             }
             cálculo += dígito;
-            // localStorage.setItem('cálculo', cálculo);
             cálculoElement.innerHTML += dígito;
         }
     }
+    tamanhoRes = cálculoElement.innerHTML.length;;
+    cálculoElement.style.fontSize = tamanhoRes >= 20 ? (tamanhoRes >= 35 ? ".8rem" : (tamanhoRes >= 50 ? ".85rem" : ".9rem")) : "1rem";
 }
 
 function detectKeydownEnter(event) {
