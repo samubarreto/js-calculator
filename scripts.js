@@ -103,7 +103,8 @@ function calcular(dígito) {
                 // ex: 10 + 10 = 20, se depois disso ele colocar - + * / vai puxar o 20 e ficar 20 + por exemplo
 
                 if ([' * ', ' / ', ' + ', ' - '].includes(dígito)) {
-                    cálculoElement.innerHTML = `${eval(cálculo)}`;
+                    cálculoElement.innerHTML = eval(cálculo);
+                    cálculo = eval(cálculo)
                 } else {
                     cálculo = '';
                     cálculoElement.innerHTML = '';
