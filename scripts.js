@@ -76,7 +76,7 @@ function calcular(dígito) {
         cálculo = '';
         verificador = false
         cálculoElement.innerHTML = 'Hello World!';
-    } else if (cálculoElement.innerHTML.length > 65) {
+    } else if (cálculoElement.innerHTML.length > 80) {
         cálculoElement.innerHTML = cálculo + ' [LIMITE-ATINGIDO]'
     } else {
         if (dígito === ' = ') {
