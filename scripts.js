@@ -68,16 +68,15 @@ function alterarTema() {
         botaoMais.classList.remove('special2');
         botaoC.classList.remove('special2');
     }
-    // console.log('Current Theme:', tema);
 };
-// limpar calculoElement quando digitar após =
+
 function calcular(dígito) {
     if (dígito === 'C') {
         cálculo = '';
         verificador = false
         cálculoElement.innerHTML = 'Hello World!';
     } else if (cálculoElement.innerHTML.length > 80) {
-        cálculoElement.innerHTML = cálculo + ' [LIMITE-ATINGIDO]'
+        cálculoElement.innerHTML = `${cálculo}<br><br>[LIMITE-ATINGIDO]`;
     } else {
         if (dígito === ' = ') {
             if (!verificador) {
@@ -101,7 +100,6 @@ function calcular(dígito) {
             }
             if (cálculoElement.innerHTML.includes('=')) {
                 // ex: 10 + 10 = 20, se depois disso ele colocar - + * / vai puxar o 20 e ficar 20 + por exemplo
-
                 if ([' * ', ' / ', ' + ', ' - '].includes(dígito)) {
                     cálculoElement.innerHTML = eval(cálculo);
                     cálculo = eval(cálculo)
