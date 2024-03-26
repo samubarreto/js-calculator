@@ -112,7 +112,7 @@ body {
   max-width: 250px;
   cursor: pointer;
   border: none;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   padding: 5px 0px;
   color: #323333;
   font-family: 'Roboto', sans-serif;
@@ -140,7 +140,7 @@ body {
 
 .change-theme-light {
   cursor: pointer;
-  margin: 10px 0px;
+  margin: 10px 0 0 0;
   padding: 5px 0px;
   color: #323333;
   font-family: 'Roboto', sans-serif;
@@ -166,7 +166,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin: 5px 0 0 0;
   min-width: 220px;
   max-width: 220px;
 }
