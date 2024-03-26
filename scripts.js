@@ -116,44 +116,33 @@ function calcular(dígito) {
     cálculoElement.style.fontSize = tamanhoRes >= 20 ? (tamanhoRes >= 35 ? ".8rem" : (tamanhoRes >= 50 ? ".85rem" : ".9rem")) : "1rem";
 }
 
-function detectKeydownEnter(event) {
-    if (event.key === '0') {
-        calcular('0');
-    } else if (event.key === '1') {
-        calcular('1');
-    } else if (event.key === '2') {
-        calcular('2');
-    } else if (event.key === '3') {
-        calcular('3');
-    } else if (event.key === '4') {
-        calcular('4');
-    } else if (event.key === '5') {
-        calcular('5');
-    } else if (event.key === '6') {
-        calcular('6');
-    } else if (event.key === '7') {
-        calcular('7');
-    } else if (event.key === '8') {
-        calcular('8');
-    } else if (event.key === '9') {
-        calcular('9');
-    } else if (event.key === '=' || event.key === 'enter') {
-        calcular(' = ');
-    } else if (event.key === 'c' || event.key === 'C') {
-        calcular('C');
-    } else if (event.key === '+') {
-        calcular(' + ');
-    } else if (event.key === '-') {
-        calcular(' - ');
-    } else if (event.key === '/') {
-        calcular(' / ');
-    } else if (event.key === '*') {
-        calcular(' * ');
-    } else if (event.key === '.') {
-        calcular('.');
-    } else if (event.key === '(') {
-        calcular(' ( ');
-    } else if (event.key === ')') {
-        calcular(' ) ');
+const keyMappings = {
+    '0': '0',
+    '1': '1',
+    '2': '2',
+    '3': '3',
+    '4': '4',
+    '5': '5',
+    '6': '6',
+    '7': '7',
+    '8': '8',
+    '9': '9',
+    '=': ' = ',
+    'Enter': ' = ',
+    'c': 'C',
+    'C': 'C',
+    '+': ' + ',
+    '-': ' - ',
+    '/': ' / ',
+    '*': ' * ',
+    '.': '.',
+    '(': ' ( ',
+    ')': ' ) '
+};
+
+function detectKeyPress(event) {
+    const key = event.key.toLowerCase();
+    if (key in keyMappings) {
+        calcular(keyMappings[key]);
     }
-}    
+}
