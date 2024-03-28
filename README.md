@@ -13,6 +13,10 @@
   [![Linktree](https://img.shields.io/badge/linktree-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/samubarreto)
   [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:samu.barreto2004@gmail.com)
   [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5514997973585)
+
+  ### TODO
+  * [ ] Refatorar a função calcular(), usando switch case e evitando repetição de código;
+  * [ ] Refazer totalmente a lógica de cálculo, sem usar o eval().
   
   [👇 Veja meu portfólio abaixo](https://samubarreto.github.io/Portfolio/)<br>
   [![github-banner](https://github.com/samubarreto/samubarreto/assets/70921394/09b2b8b6-8264-4e34-a224-bf009f7307b5)](https://samubarreto.github.io/Portfolio/)
